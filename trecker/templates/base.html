@@ -1,0 +1,41 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+        <link rel="stylesheet" href="https://rentafont.com.ua/fonts/kyiv-type-sans">
+        <link rel="stylesheet" href="https://rentafont.com.ua/fonts/kyiv-type-titling">
+        <link rel="stylesheet" href="https://rentafont.com.ua/fonts/kyiv-type-serif">
+
+        {% block link %}
+        {% endblock %}
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <header>
+            <div class = "hat">
+                <a>Головна</a>
+                <a>Цілі</a>
+                <a>Реєстрація</a>
+                <a>Авторизація</a>
+            </div>
+        </header>
+        <footer>
+            <div class = "footer">
+                <div class = "image">
+                    <img src="{% static 'icons/github.png'%}" alt="">
+                </div>
+                <div class = "footer-urls">
+                    <a href="">Про мене</a>
+                    <a href="">Корисність звичок</a>
+                    <a href="">Контакти</a>
+                </div>
+            </div>
+        </footer>
+        {% block content %}
+        {% endblock %}
+        {% block script %}
+        {% endblock %}
+    </body>
+</html>

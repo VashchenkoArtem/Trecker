@@ -15,26 +15,26 @@
     <body>
         <header>
             <div class = "hat">
-                <a>Головна</a>
-                <a>Цілі</a>
-                <a>Реєстрація</a>
-                <a>Авторизація</a>
+                <a class = "url main">Головна</a>
+                <a class = "url goal">Цілі</a>
+                <a class = "url registration">Реєстрація</a>
+                <a class = "url authorization">Авторизація</a>
             </div>
         </header>
+        {% block content %}
+        {% endblock %}
         <footer>
             <div class = "footer">
                 <div class = "image">
-                    <img src="{% static 'icons/github.png'%}" alt="">
+                    <img class = "github-image" src="{% static 'images/icons/github.png'%}" alt="">
                 </div>
                 <div class = "footer-urls">
-                    <a href="">Про мене</a>
-                    <a href="">Корисність звичок</a>
-                    <a href="">Контакти</a>
+                    <a href="" class = "url about-me">Про мене</a>
+                    <a href="" class = "url usefullnes">Корисність звичок</a>
+                    <a href="" class = "url contacts">Контакти</a>
                 </div>
             </div>
         </footer>
-        {% block content %}
-        {% endblock %}
         {% block script %}
         {% endblock %}
     </body>

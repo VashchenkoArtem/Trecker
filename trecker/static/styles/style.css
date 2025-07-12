@@ -3,46 +3,45 @@
     padding: 0px;
 }
 .hat{
+    height: calc(2.5vw + 3.7vh);
     width: 100%;
-    height: 78px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: calc(3.2vw + 4.8vh);
 }
-a{
+.url{
     color: white;
-    font-size: 24px;
+    font-size: calc(0.8vw + 1.1vh);
     font-family: 'Kyiv Type Sans', sans-serif;
 }
 .footer{
     width: 100%;
-    height: 78px;
+    height: calc(2.5vw + 3.7vh);
     background-color: C9C9C9;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 100px;
+    gap: calc(3.2vw + 4.8vh);
 }
 .image{
-    width: 345.5px;
-    height: 50px;
+    width: calc(17vw + 19vh);
+    height: calc(1.3vw + 1.9vh);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left:14px
+    margin-left:calc(0.6vw + 0.7vh);
 }
-img{
-    width: 50px;
-    height: 50px;
+.github-image{
+    width: calc(1.3vw + 1.9vh);
+    height: calc(1.3vw + 1.9vh);
 }
 
 .footer-urls{
-    width: 672px;
-    height: 29px;
+    width: calc(21.8vw + 32vh);
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 100px;
+    gap: calc(3.2vw + 4.8vh);
 }

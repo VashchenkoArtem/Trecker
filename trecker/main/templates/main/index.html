@@ -1,1 +1,27 @@
 {% extends 'base.html'%}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+{% endblock %}
+{% block content %}
+    <div class = "body">
+        <h1 class = "title-page">Трекер звичок - зроби життя краще,<br>формуючи корисні звички!</h1>
+        <div class = "main-page-advantages">
+            <h2 class = "title-advantages">Чому саме наш сайт?</h2>
+            <div class = "body-advantages">
+                <div class = "advantage">
+                    <img class = "image-advantage" src="{% static 'images/advantages/interface.png'%}" alt="">
+                    <h3 class = "description-advantage">Зручний<br>інтерфейс</h3>
+                </div>
+                <div class = "advantage">
+                    <img class = "image-advantage" src="{% static 'images/advantages/functional.png'%}" alt="">
+                    <h3 class = "description-advantage">Багатогранний<br>функціонал</h3>
+                </div>
+                <div class = "advantage">
+                    <img class = "image-advantage" src="{% static 'images/advantages/without_add.png'%}" alt="">
+                    <h3 class = "description-advantage">Відсутність<br>реклами</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,5 +1,5 @@
 *{
-    color: white;
+    color: rgba(255, 255, 240, 1);
 }
 .main{
     color: rgba(158, 158, 158, 100%);
@@ -15,7 +15,6 @@
     padding-bottom: calc(1.6vw + 2.4vh);
 }
 .title-page{
-    font-family: 'Kyiv Type Sans', sans-serif;
     font-size: calc(1.6vw + 2.3vh);
     font-weight: bold;
     text-align: center;

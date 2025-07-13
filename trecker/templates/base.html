@@ -4,10 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{% static 'styles/style.css' %}">
-        <link rel="stylesheet" href="https://rentafont.com.ua/fonts/kyiv-type-sans">
-        <link rel="stylesheet" href="https://rentafont.com.ua/fonts/kyiv-type-titling">
-        <link rel="stylesheet" href="https://rentafont.com.ua/fonts/kyiv-type-serif">
-
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap">
         {% block link %}
         {% endblock %}
         <title>{% block title %}{% endblock %}</title>
@@ -15,9 +12,9 @@
     <body>
         <header>
             <div class = "hat">
-                <a class = "url main">Головна</a>
+                <a href = "{% url 'main' %}" class = "url main">Головна</a>
                 <a class = "url goal">Цілі</a>
-                <a class = "url registration">Реєстрація</a>
+                <a href = "{% url 'registration' %}" class = "url registration">Реєстрація</a>
                 <a class = "url authorization">Авторизація</a>
             </div>
         </header>

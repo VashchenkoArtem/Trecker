@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Anonymous Pro', monospace;
 }
 .hat{
     height: calc(2.5vw + 3.7vh);
@@ -14,7 +15,7 @@
 .url{
     color: white;
     font-size: calc(0.8vw + 1.1vh);
-    font-family: 'Kyiv Type Sans', sans-serif;
+    text-decoration: none;
 }
 .footer{
     width: 100%;

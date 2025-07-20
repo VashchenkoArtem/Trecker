@@ -1,0 +1,38 @@
+.url.about-me{
+    color: rgb(230, 230, 230);
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(1vw + 1.4vh);
+    gap: calc(0.8vw + 1.2vh);
+    height: calc(23vw + 30vh);
+
+}
+.about-me-title{
+    color: white;
+    font-size: calc(2.1vw + 3vh);
+}
+div.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(0.8vw + 1.2vh);
+}
+.my-biography{
+    display: flex;
+    gap: calc(0.8vw + 1.2vh);
+}
+.my-photo{
+    width: calc(8.6vw + 12.5vh);
+}
+.my-biography-description{
+    font-size: calc(1.2vw + 1.7vh);
+}
+.patreon-container{
+    width: calc(42.3vw + 62vh);
+}
+.patreon-url{
+    font-size: calc(1.6vw + 2.3vh);
+}

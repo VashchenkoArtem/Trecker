@@ -9,7 +9,7 @@ from django.contrib.auth.views import LoginView
 class RegistrationView(CreateView):
     form_class = CustomRegistrationForm
     template_name = "registration/registration.html"
-    success_url = reverse_lazy("main")
+    success_url = reverse_lazy("authorization")
     
 class AuthorizationView(LoginView):
     template_name = "authorization/authorization.html"

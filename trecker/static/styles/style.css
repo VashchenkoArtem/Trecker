@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Anonymous Pro', monospace;
+    color: rgba(255, 255, 240, 1);
 }
 html, body {
     height: 100%;
@@ -26,9 +27,6 @@ body{
     text-decoration: none;
 }
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     height: calc(2.5vw + 3.7vh);
     background-color: #C9C9C9;

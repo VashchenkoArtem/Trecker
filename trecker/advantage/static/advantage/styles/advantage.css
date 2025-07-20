@@ -1,0 +1,13 @@
+.usefullnes{
+    color: rgba(158, 158, 158, 100%);
+}
+.main{
+    color: rgba(255, 255, 240, 1);
+}
+.body {
+    justify-content: center;
+    min-height: 82%;
+}
+.authorization{
+    margin-right: calc(0.5vw + 1vh);
+}

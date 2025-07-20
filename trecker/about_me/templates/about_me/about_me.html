@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Про мене
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'about_me/styles/about_me.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class = "body">
+        <h1 class = "about-me-title">Про мене</h1>
+        <div class = "about-me">
+            <div class = "my-biography">
+                <p class = "my-biography-description">Мене звати  Артем, мені 15 років. Я початковий<br>розробник. Почав цікавитися програмуванням у 2024<br>році та до 2025 вивчив: Python, JavaScript, основи<br>CSS та HTML. З кожним днем мій портфоліо на<br>GitHub збільшується і проєкти становляться все<br>складніші. Тому, якщо хочете слідкувати за моїми<br>майбутніми проєктами - підписуйтесь на мій Patreon!</p>
+                <img class = "my-photo" src = "{% static 'about_me/images/my_photo.png' %}" alt="">
+            </div>
+            <div class = "patreon-container">
+                <a class = "patreon-url" href="https://www.patreon.com/c/VashchenkoArtem">Посилання на патреон</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'registration'
+    'registration',
+    'about_me',
+    'advantage'
 ]
 
 MIDDLEWARE = [
@@ -125,6 +127,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [BASE_DIR / "static",
                     BASE_DIR / "main/static",
-                    BASE_DIR / "registration/static"]
+                    BASE_DIR / "registration/static",
+                    BASE_DIR / "about_me/static"]
 
 LOGIN_REDIRECT_URL = reverse_lazy("main")

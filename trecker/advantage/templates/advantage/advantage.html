@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    <link rel="stylesheet" href="{% static 'advantage/styles/advantage.css'%}">
+{% endblock %}
+
+{% block title %}
+    Корисність звичок
+{% endblock %}
+
+{% block content %}
+    <div class = "body">
+        <div class = "main-page-advantages">
+            <h2 class = "title-advantages">Корисність звичок</h2>
+            <div class = "body-advantages">
+                <div class = "advantage">
+                    <img class = "image-advantage" src="{% static 'advantage/images/stress.png' %}" alt="">
+                    <h3 class = "description-advantage">Зменшення<br>стресу</h3>
+                </div>
+                <div class = "advantage">
+                    <img class = "image-advantage" src="{% static 'advantage/images/upgrade_conc.png'%}" alt="">
+                    <h3 class = "description-advantage">Покращення<br>концентрації</h3>
+                </div>
+                <div class = "advantage">
+                    <img class = "image-advantage" src="{% static 'advantage/images/mental_health.png'%}" alt="">
+                    <h3 class = "description-advantage">Покращення<br>ментального<br>здоров'я</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -19,6 +19,7 @@ from django.urls import path, include
 from main.views import MainView
 from about_me.views import AboutMeView
 from advantage.views import AdvantagesView
+from contacts.views import ContactsView
 
 
 urlpatterns = [
@@ -26,5 +27,6 @@ urlpatterns = [
     path("", MainView.as_view(), name = "main"),
     path("user/", include("registration.urls")),
     path("about_me/", AboutMeView.as_view(), name = "about_me"),
-    path("advantages/", AdvantagesView.as_view(), name = "advantages")
+    path("advantages/", AdvantagesView.as_view(), name = "advantages"),
+    path("contacts/", ContactsView.as_view(), name = "contacts")
     ]

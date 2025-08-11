@@ -1,18 +1,24 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Anonymous Pro', monospace;
     color: rgba(255, 255, 240, 1);
 }
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: rgba(61, 111, 222, 1);
 }
-.hat{
+
+.hat {
     height: calc(2.5vw + 3.7vh);
     width: 100%;
     background-color: black;
@@ -21,11 +27,13 @@ body{
     align-items: center;
     gap: calc(3.2vw + 4.8vh);
 }
-.url{
+
+.url {
     color: white;
     font-size: calc(0.8vw + 1.1vh);
     text-decoration: none;
 }
+
 .footer {
     width: 100%;
     height: calc(2.5vw + 3.7vh);
@@ -35,22 +43,24 @@ body{
     align-items: center;
     gap: calc(3.2vw + 4.8vh);
     z-index: 100;
+    margin-top: auto;
 }
 
-.image{
+.image {
     width: calc(17vw + 19vh);
     height: calc(1.3vw + 1.9vh);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left:calc(0.6vw + 0.7vh);
+    margin-left: calc(0.6vw + 0.7vh);
 }
-.github-image{
+
+.github-image {
     width: calc(1.3vw + 1.9vh);
     height: calc(1.3vw + 1.9vh);
 }
 
-.footer-urls{
+.footer-urls {
     width: calc(21.8vw + 32vh);
     display: flex;
     justify-content: flex-start;
